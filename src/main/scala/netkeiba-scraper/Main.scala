@@ -140,6 +140,10 @@ object RowExtractor {
       //以下のデータは壊れているので除外する。恐らくnetkeiba.comの不具合。
       filter(file => FilenameUtils.getBaseName(file.getName) != "200808020398").
       filter(file => FilenameUtils.getBaseName(file.getName) != "200808020399").
+      filter(file => FilenameUtils.getBaseName(file.getName) != "201307010311").
+      filter(file => FilenameUtils.getBaseName(file.getName) != "201307010310").
+      filter(file => FilenameUtils.getBaseName(file.getName) != "201307010312").
+      filter(file => FilenameUtils.getBaseName(file.getName) != "201307010309").
       toArray.
       reverse
  
